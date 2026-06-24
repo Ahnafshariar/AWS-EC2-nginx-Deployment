@@ -43,6 +43,25 @@ flowchart TB
 
 ## Deployment, Step by Step
 
+### 1. Create Key Pairs for SSH
+First, navigate to EC2 dashboard page and from the left panel click on the Key Pairs.
+ 
+![alt text](image1.png)
+ 
+Then, in the key pair page, select create key pair on the top right corner.
+ 
+![alt text](image2.png)
+ 
+- Give appropriate key pair name.
+- For key pair type select RSA.
+- Select ".pem" as private key file format
+- Then Create key pair
+![alt text](image3.png)
+ 
+All the created key pairs can be found in the Key pairs dashboard.
+ 
+> The private key (`.pem`) downloads automatically. Keep it safe — it is the only copy, and anyone who has it can log in to your instance. On Linux/macOS, lock its permissions: `chmod 400 your-key.pem`.
+
 ### 2. Create VPC
 First, go to the VPC dashboard page (search "VPC" from the AWS console home page) and select **Create VPC**.
 
