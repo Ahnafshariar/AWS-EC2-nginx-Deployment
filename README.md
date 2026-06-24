@@ -77,9 +77,9 @@ In the Create VPC page:
 
 ![alt text](image7.png)
 
-- **Number of Availability Zones (AZs):** `1` is enough for a single-instance deployment (choose `2` if you want high availability).
+- **Number of Availability Zones (AZs):** `2` for high availability  enough for  (`1` is enough for a single-instance deployment).
 - **Number of public subnets:** `2`.
-- **Number of private subnets:** `2` (this app is internet-facing through NGINX, so we only need a public subnet).
+- **Number of private subnets:** `2` (the private subnets stay unused for this single public instance.).
 - **NAT gateways:** None (they cost money and aren't needed here).
 - **VPC endpoints:** None.
 - Keep **Enable DNS hostnames** and **Enable DNS resolution** checked.
