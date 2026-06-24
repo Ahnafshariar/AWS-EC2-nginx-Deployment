@@ -1,0 +1,26 @@
+# ── Security-first ignore: never commit secrets or keys ──
+*.pem
+*.key
+*.ppk
+*.crt
+*.cer
+*.p12
+*.pfx
+*.pub
+id_rsa*
+id_ed25519*
+.env
+.env.*
+*.env
+*token*
+*apikey*
+credentials*
+.aws/
+.ssh/
+.npmrc
+.netrc
+# ── Noise ──
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
